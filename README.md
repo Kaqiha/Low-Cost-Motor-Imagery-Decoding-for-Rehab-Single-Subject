@@ -22,12 +22,3 @@ Rest vs move classification from 8-channel EEG (C4, C3, Cz, Fz, PO7, Pz, PO8, Oz
 3. **File mapping.** The `.py` is V2 (subjects 1-20, 2 bands). The notebook is V3 (subject 1, 29 bands).
 4. **V3 averages all 29 bands equally**, including poorly scoring ones.
 5. **Output format.** The notebook writes `result.csv` with `index=True` (extra unnamed column); the `.py` uses `index=False`.
-
-## Candidate next versions
-
-| Ver | Idea |
-|---|---|
-| V4a | Filter each file before concatenating |
-| V4b | Average only the top-scoring bands |
-| V4c | Pick bands automatically per subject instead of by eye |
-| V4d | Move band selection inside the cross-validation loop to avoid selection bias |
